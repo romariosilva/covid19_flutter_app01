@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           bodyText1: TextStyle(color: kBodyTextColor)
         ),
       ),
-      home: InfoScreen(),
+      home: HomeScreen(),
     );
   }
 }
@@ -40,8 +40,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             MyHeader(
               image: "assets/icons/Drcorona.svg",
-              textTop: "All you need",
-              textBottom: "is stay at home.",
+              textTop: "O que precisamos",
+              textBottom: "é ficar em casa.",
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -64,8 +64,8 @@ class HomeScreen extends StatelessWidget {
                       isExpanded: true,
                       underline: SizedBox(),
                       icon: SvgPicture.asset("assets/icons/dropdown.svg"),
-                      value: "Indonesia",
-                      items: ['Indonesia', 'Bangladesh', 'United States', 'Japan']
+                      value: 'Indonésia',
+                      items: ['Indonésia', 'Bangladesh', 'Estados Unidos', 'Japão']
                           .map<DropdownMenuItem<String>>((String value){
                             return DropdownMenuItem<String>(
                               value: value,
@@ -89,11 +89,11 @@ class HomeScreen extends StatelessWidget {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Case Update\n",
+                              text: "Atualização dos casos\n",
                               style: kTitleTextstyle,
                             ),
                             TextSpan(
-                              text: "Newest update March 28",
+                              text: "Atualização mais recente Setembro 10",
                               style: TextStyle(
                                 color: kTextLightColor,
                               ),
@@ -103,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Spacer(),
                       Text(
-                        "See details",
+                        "Ver detalhes",
                         style: TextStyle(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w600
@@ -130,18 +130,18 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Counter(
                           color: kInfectedColor,
-                          number: 1046,
-                          title: "Infected",
+                          number: 4.238,
+                          title: "Infectados",
                         ),
                         Counter(
                           color: kDeathColor,
-                          number: 87,
-                          title: "Deaths",
+                          number: 129.5,
+                          title: "Mortos",
                         ),
                         Counter(
                           color: kRecovercolor,
-                          number: 46,
-                          title: "Recovered",
+                          number: 18.918,
+                          title: "Recuperados",
                         ),
                       ],
                     ),
@@ -151,11 +151,11 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Spread of Virus",
+                        "Propagação do vírus",
                         style: kTitleTextstyle,
                       ),
                       Text(
-                        "See details",
+                        "Ver detalhes",
                         style: TextStyle(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w600

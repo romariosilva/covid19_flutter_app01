@@ -4,7 +4,7 @@ import '../constants.dart';
 
 class Counter extends StatelessWidget {
 
-  final int number;
+  final double number;
   final Color color;
   final String title;
 
