@@ -40,8 +40,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             MyHeader(
               image: "assets/icons/Drcorona.svg",
-              textTop: "O que precisamos",
-              textBottom: "é ficar em casa.",
+              textTop: "Precisamos",
+              textBottom: "Ficar em casa",
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
@@ -93,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                               style: kTitleTextstyle,
                             ),
                             TextSpan(
-                              text: "Atualização mais recente Setembro 10",
+                              text: "Atualização mais recente",
                               style: TextStyle(
                                 color: kTextLightColor,
                               ),
@@ -130,17 +130,17 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         Counter(
                           color: kInfectedColor,
-                          number: 4.238,
+                          number: 4.23,
                           title: "Infectados",
                         ),
                         Counter(
                           color: kDeathColor,
-                          number: 129.5,
+                          number: 19.5,
                           title: "Mortos",
                         ),
                         Counter(
                           color: kRecovercolor,
-                          number: 18.918,
+                          number: 18.8,
                           title: "Recuperados",
                         ),
                       ],

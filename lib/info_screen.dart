@@ -26,31 +26,34 @@ class InfoScreen extends StatelessWidget {
                     style: kTitleTextstyle,
                   ),
                   SizedBox(height: 20,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SymptomCard(
-                        image: "assets/images/headache.png",
-                        title: "Dor de cabeça",
-                        isActive: true,
-                      ),
-                      SymptomCard(
-                        image: "assets/images/caugh.png",
-                        title: "Tosse",
-                      ),
-                      SymptomCard(
-                        image: "assets/images/fever.png",
-                        title: "Febre",
-                      ),
-                    ],
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SymptomCard(
+                          image: "assets/images/headache.png",
+                          title: "Dor de cabeça",
+                          isActive: true,
+                        ),
+                        SymptomCard(
+                          image: "assets/images/caugh.png",
+                          title: "Tosse",
+                        ),
+                        SymptomCard(
+                          image: "assets/images/fever.png",
+                          title: "Febre",
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20),
                   Text("Prevenção", style: kTitleTextstyle,),
                   SizedBox(height: 20),
                   PreventCard(
                     image: "assets/images/wear_mask.png",
-                    text: "Desde o surto de coronavírus, alguns lugares adotaram o uso de máscaras faciais",
-                    title: "Use máscara facial",
+                    text: "O uso da máscara foi adotada em todos os lugares",
+                    title: "Use máscara",
                   ),
                   PreventCard(
                     image: "assets/images/wash_hands.png",
@@ -159,6 +162,7 @@ class SymptomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(right: 10),
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),

@@ -63,13 +63,13 @@ class MyHeader extends StatelessWidget {
                 children: [
                   SvgPicture.asset(
                     image,
-                    width: 230,
+                    width: 200,
                     fit: BoxFit.fitWidth,
                     alignment: Alignment.topCenter,
                   ),
                   Positioned(
                     top: 20,
-                    left: 150,
+                    left: 135,
                     child: Text(
                       "$textTop \n$textBottom",
                       style: kHeadingTextStyle.copyWith(
